@@ -1,14 +1,14 @@
 //import liraries
-import React, { Component } from "react";
-import { View, Text, StyleSheet, TouchableOpacity, } from "react-native";
-import { Scene, Router, Stack, Actions } from "react-native-router-flux";
+import React, { Component } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, } from 'react-native';
+import { Scene, Router, Stack, Actions } from 'react-native-router-flux';
 import { Icon } from 'react-native-elements';
-import Login from "./Login";
-import Home from "./Home";
+import Login from './Login';
+import Home from './Home';
 import Register from './Register';
 import EmployeeList from './components/employees/EmployeeList';
 import EmployeeCreate from './components/employees/EmployeeCreate';
-import LibraryDetail from "./components/apps/LibraryDetail";
+import LibraryDetail from './components/apps/LibraryDetail';
 import { TestView } from './components/common';
 import EmployeeEdit from './components/employees/EmloyeeEdit';
 
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#c83349',
   },
   navTitle: {
-    color: "#FFFFFF",
+    color: '#ffffff',
     textAlign: 'center',
   },
   leftIcon: {

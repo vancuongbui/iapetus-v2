@@ -1,14 +1,14 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, YellowBox } from 'react-native';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import ReduxThunk from 'redux-thunk';   //a middleware, therefoere need to use with applyMiddleware
 // import firebase
 import firebase from '@firebase/app';
 import '@firebase/auth';
+// import firebase from 'firebase';
 import reducers from './reducers';
-import { YellowBox } from 'react-native';
 // import reducers from folder reducers
 // import reducers from './reducers';
 // import common components
@@ -50,7 +50,8 @@ class App extends Component {
         return (            
             <Provider store={store}>
                 <View style={styles.container}>                      
-                    <Router />       
+                    <Router /> 
+                    {/* <Text>Test</Text>       */}
                 </View>  
             </Provider>                    
         );

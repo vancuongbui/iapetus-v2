@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TextInput, } from 'react-native';
 
-const Input = ({ label, value, onChangeText, placeHolder, secureTextEntry }) => {
+const Input = ({ label, value, onChangeText, placeHolder, secureTextEntry, valid }) => {
     // purpose of the lable here is to reuse this component, rename it for purposes
     return (
         <View style={styles.input} >
@@ -11,7 +11,7 @@ const Input = ({ label, value, onChangeText, placeHolder, secureTextEntry }) => 
                 secureTextEntry={secureTextEntry}
                 value={value}                     
                 onChangeText={onChangeText}
-                style={styles.textInput}
+                style={[styles.textInput, valid ? null : styles.inValid]}
                 placeholder={placeHolder}
                 clearButtonMode='always'
             />
@@ -34,6 +34,10 @@ const styles = {
         fontSize: 20,
         paddingBottom: 10,
         // fontWeight: 'bold',
+    },
+    inValid: {
+        borderColor: '#d64161',
+        backgroundColor: '555555',
     }
 };
 

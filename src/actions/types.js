@@ -18,3 +18,6 @@ export const SUBMIT_SUCCESS = 'sucessfully_done_something';
 export const SUBMIT_FAIL = 'submit_fail';
 export const EMPLOYEE_FETCH_SUCCESS = 'employee_fetch_success';
 export const INVALID_DATA = 'invalid_form_data';
+
+// type for the submit form
+export const AUTH_FORM_SUBMIT = 'try_to_submit_auth_form';

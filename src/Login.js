@@ -4,8 +4,9 @@ import { View, Text, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
 import { Actions } from 'react-native-router-flux';
 // import firebase
-import firebase from '@firebase/app';
-import '@firebase/auth';
+// import firebase from '@firebase/app';
+// import '@firebase/auth';
+// import firebase from 'firebase';
 import { emailChanged, passChanged, loginUser, } from './actions';
 // import { LoginForm } from './components/common';
 import { Card, CardSection, Button, Input, Spinner, Footer, } from './components/common';
@@ -70,8 +71,10 @@ class Login extends Component {
                     <CardSection>
                         <View style={styles.buttonStyle}>
                             {this.renderButton()}
-                            <Button style={{ backgroundColor: '#c83349' }}
-                                onPress={() => Actions.employeeCreate()}
+                            <Button 
+                                style={{ backgroundColor: '#c83349' }}
+                                // onPress={() => Actions.employeeCreate()}
+                                onPress={() => Actions.register()}
                             >
                                 Register
                             </Button>
