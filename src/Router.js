@@ -11,6 +11,7 @@ import EmployeeCreate from './components/employees/EmployeeCreate';
 import LibraryDetail from './components/apps/LibraryDetail';
 import { TestView } from './components/common';
 import EmployeeEdit from './components/employees/EmloyeeEdit';
+import Locations from './components/maps/Locations'
 
 // create a component
 const RouterComponent = () => {
@@ -29,6 +30,14 @@ const RouterComponent = () => {
             component={Register}
             title="IAPETUS REGISTERING"          
           />
+        </Scene>
+        <Scene key="utility" navigationBarStyle={styles.header} titleStyle={styles.navTitle}>
+          <Scene
+            key="location"
+            component={Locations}
+            title="Iapetus location"                      
+          />
+        </Scene>
         <Scene key="employee" navigationBarStyle={styles.header} titleStyle={styles.navTitle}>
           <Scene              
               key="employeeList"
@@ -49,7 +58,6 @@ const RouterComponent = () => {
               title="IAPETUS UPDATE EMPLOYEE"           
           />
         </Scene> 
-        </Scene>
         <Scene key="main" navigationBarStyle={styles.header} titleStyle={styles.navTitle}>
           <Scene             
             key="home" 

@@ -4,6 +4,4 @@ project(':react-native-vector-icons').projectDir = new File(rootProject.projectD
 
 include ':app'
 // adding the follwoing 
-include ':react-native-maps'
-project(':react-native-maps').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-maps/lib/android')
-// if error, the above need to be remove
+// if error, the above need to be remov

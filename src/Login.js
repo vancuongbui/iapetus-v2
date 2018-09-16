@@ -74,7 +74,7 @@ class Login extends Component {
                             <Button 
                                 style={{ backgroundColor: '#c83349' }}
                                 // onPress={() => Actions.employeeCreate()}
-                                onPress={() => Actions.register()}
+                                onPress={() => Actions.location()}
                             >
                                 Register
                             </Button>
